@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <title>Cafestries</title>
+    <!-- links for font-awesome and bootstrap4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* Change color of the cart icon */
+        .cart-icon {
+            color: white; /* Replace with the color you want */
+        }
+    
+        /* Change color of the total price when clicked */
+        .cart-total-price.clicked {
+            color: white;
+        }
+    </style>
+
+</head>
+<body style="background-image: url('bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="info">
+    <div class="info-left">
+        <section>
+            <i class="fas fa-phone"></i> +764-425-748
+        </section>
+        <section>
+            <i class="fas fa-envelope"></i> Cafestries'sbrewedbitehaven@gmail.com
+        </section>
+    </div>
+    <div class="info-right">
+        <div class="social">
+           <!-- <a href="https://www.facebook.com/profile.php?id=61555523386896"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/VIsmaella44701"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/brewedbite_haven"><i class="fab fa-instagram"></i></a>-->
+            
+        </div>
+        <div class="info-link">
+            <a href="#login.html">shop now</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- start header section  -->
+
+<header>
+    <a href="homepage.html" class="logo">
+        <img src="pic/logo.jpg" alt="">
+    </a>
+    <nav class="navigation">
+        <li><a href="homepage.html">home</a></li>
+        <li><a href="homepage.html">shop</a></li>
+        <li><a href="homepage.html">menu</a></li>
+        <li><a href="homepage.html">about</a></li>
+        <li><a href="homepage.html">contact</a></li>
+        
+        </li>    
+    </nav>
+    <div class="bars">
+        <img src="pic/menu.png" alt="" class="bar">
+    </div>
+</header>
+<!-- end header section  -->
+  <div class="d-flex justify-content-center align-items-center" style="height: 100vh; background-color: rgba(0,0,0,0.3);">
+    <div class="login-form" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 5px; padding: 20px;">
+        <h2 class="text-center" style="color: white;">Login</h2>
+        <form class="form" action="index.html" method="get">
+            <div class="form-group">
+                <label for="exampleInputEmail1" style="color: white;">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted" style="color: white;">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" style="color: white;">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+    </div>
+</div> 
+</body>
+</html>

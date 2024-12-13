@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <title>Cafestries</title>
+    <!-- links for font-awesome and bootstrap4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* Change color of the cart icon */
+        .cart-icon {
+            color: white; /* Replace with the color you want */
+        }
+    
+        /* Change color of the total price when clicked */
+        .cart-total-price.clicked {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="info">
+        <div class="info-left">
+            <section>
+                <i class="fas fa-phone"></i> +764-425-748
+            </section>
+            <section>
+                <i class="fas fa-envelope"></i> Cafestries'sbrewedbitehaven@gmail.com
+            </section>
+        </div>
+        <div class="info-right">
+            <div class="social">
+               <!-- <a href="https://www.facebook.com/profile.php?id=61555523386896"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/VIsmaella44701"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/brewedbite_haven"><i class="fab fa-instagram"></i></a>-->
+                
+            </div>
+            <div class="info-link">
+                <a href="login.html">shop now</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- start header section  -->
+
+    <header>
+        <a href="#home" class="logo">
+            <img src="pic/logo.jpg" alt="">
+        </a>
+        <nav class="navigation">
+            <li><a href="#home">home</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            </li>    
+        </nav>
+        <div class="bars">
+            <img src="pic/menu.png" alt="" class="bar">
+        </div>
+    </header>
+    <!-- end header section  -->
+
+  
+    <!-- start home section  -->
+
+    <div class="home-section" id="home">
+        <div class="home-content">
+            <h1>Savor Our <br> Premium Coffee</h1>
+            <p>
+                Allow us the opportunity to leave a lasting impression <br> for evaluation.
+            </p>
+            <div class="home-links">
+                <div class="first">
+                    <a href="#menu">tasty coffee</a>
+                </div>
+                <div class="second">
+                    <a href="#contact">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end home section  -->
+
+    <!-- start section two  -->
+
+    <div class="bg-service">
+        <div class="service-one">
+            <img src="pic/coffeeanddrinks.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for drinks</p>
+                    <h4>
+                        coffee & drinks
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="service-one">
+            <img src="pic/sweets_upastries.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for food</p>
+                    <h4>
+                        sweets & pastries
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="service-one">
+            <img src="pic/Teas.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for healthy living</p>
+                    <h4>
+                        teas
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section two  -->
+
+    <!-- start section three  -->
+
+    <!--<div class="bg-shop" id="shop">
+        <div class="shop-links">
+            <div>
+                <h2>products</h2>
+            </div>
+            <div class="links">
+                <li data-filter="all"></li>
+                <li data-filter=".frappe"></li>
+                <li data-filter=".cold-coffee"></li>
+                <li data-filter=".hot coffee"></li>
+                <li data-filter=".tea"></li>
+                <li data-filter=".bread-sweets"></li>
+            </div>
+        </div>
+        <div class="shop-flex consts">
+            <div class="shop1 mix coffee" data-user="123" date-price="175.00">
+                <div class="shop-image">
+                    <img src="pic/cappuccinof.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cappuccino Frappe', price: 175.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Cappuccino Frappe</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article class="product-price">
+                    ₱ 175.00
+                </article class="discounted-price">
+                <span>
+                    ₱ 195.00
+                </span>
+            </div>
+
+            <div class="shop1 mix coffee" data-user="123" date-price="190.00">
+                <div class="shop-image">
+                    <img src="pic/caramelvanf.png" alt="">
+                    <div class="price">
+                        -12%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Caramel Vanilla Frappe', price: 190.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Caramel Vanilla Frappe</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article class="product-price">
+                    ₱ 190.00
+                </article class="discounted-price">
+                <span>
+                    ₱210.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee" data-user="123" date-price="200.00">
+                <div class="shop-image">
+                    <img src="pic/strawberryvanf.png" alt="">
+                    <div class="price">
+                        -13%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Strawberry Vanilla Frappe', price: 200.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Strawberry Vanilla Frappe</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    ₱ 200.00
+                </article>
+                <span>
+                    ₱ 220.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee" data-user="123" data-price="190.00">
+                <div class="shop-image">
+                    <img src="pic/darkchocof.png" alt="">
+                    <div class="price">
+                        -6%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart" onclick="addToCart({name: 'Dark Choco Frappe', price: 190.00})"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Dark Choco Frappe</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    ₱ 190.00
+                </article>
+                <span>
+                    ₱ 200.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix machines" data-user="123" data-price="175.00">
+                <div class="shop-image">
+                    <img src="pic/coldbrew.png" alt="">
+                    <div class="price">
+                        -20%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cold Brew', price: 175.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Cold Brew</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    ₱ 175.00
+                </article>
+                <span>
+                    ₱210.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines" data-user="123" data-price="170.00">
+                <div class="shop-image">
+                    <img src="pic/icedamericano.png" alt="">
+                    <div class="price">
+                        -5%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Americano', price: 170.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Iced Americano</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa -star gold"></i>
+                </div>
+                <article>
+                    ₱ 170.00
+                </article>
+                <span>
+                    ₱ 180.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines" data-user="123" data-price="170.00">
+                <div class="shop-image">
+                    <img src="pic/icedcafelatte.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Cafe Latte', price: 170.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Iced Cafe Latte</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    ₱ 170.00
+                </article>
+                <span>
+                    ₱ 185.00
+                </span>
+            </div>
+
+            <div class="shop1 mix sweets"  data-user="123" data-price="180.00">
+                <div class="shop-image">
+                    <img src="pic/icedcaramellatte.png" alt="">
+                    <div class="price">
+                        -15%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Caramel Latte', price: 180.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>Iced Caramel Latte</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    ₱ 180.00
+                </article>
+                <span>
+                    ₱ 200.00
+                </span>
+            </div>
+
+            <div class="shop1 mix sweets"  data-user="123" data-price="180.00">
+                <div class="shop-image">
+                    <img src="pic/icedchoco.png" alt="">
+                    <div class="price">
+                        -15%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Chocolate  Cafe', price: 180.00})"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Iced Chocolate Cafe</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <article>
+                        ₱ 180.00
+                    </article>
+                    <span>
+                        ₱ 200.00
+                    </span>
+                </div>
+
+
+                    <div class="shop1 mix sweets"  data-user="123" data-price="195.00">
+                        <div class="shop-image">
+                            <img src="pic/icedwhitemocha.png" alt="">
+                            <div class="price">
+                                -15%
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced White Mocha', price: 195.00})"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                        <h2>Iced White Mocha</h2>
+                        <div class="stars">
+                            <i class="fas fa-star gold"></i>
+                            <i class="fas fa-star gold"></i>
+                            <i class="fas fa-star gold"></i>
+                            <i class="fas fa-star gold"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <article>
+                            ₱ 195.00
+                        </article>
+                        <span>
+                            ₱ 210.00
+                        </span>
+                    </div>
+
+
+                        <div class="shop1 mix sweets"  data-user="123" data-price="180.00">
+                            <div class="shop-image">
+                                <img src="pic/icedcappuccino.png" alt="">
+                                <div class="price">
+                                    -15%
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Cappuccino', price: 180.00})"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <h2>Iced Cappuccino</h2>
+                            <div class="stars">
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <article>
+                                ₱ 180.00
+                            </article>
+                            <span>
+                                ₱ 190.00
+                            </span>
+                        </div>
+
+
+                            <div class="shop1 mix sweets"  data-user="123" data-price="180.00">
+                                <div class="shop-image">
+                                    <img src="pic/icedcaramelmacchiato.png" alt="">
+                                    <div class="price">
+                                        -15%
+                                    </div>
+                                    <div class="social">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Caramel Macchiato', price: 180.00})"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#"><i class="fas fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <h2>Iced Caramel Macchiato</h2>
+                                <div class="stars">
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <article>
+                                    ₱ 180.00
+                                </article>
+                                <span>
+                                    ₱ 200.00
+                                </span>
+                            </div>
+
+                                <div class="shop1 mix sweets"  data-user="123" data-price="160.00">
+                                    <div class="shop-image">
+                                        <img src="pic/hotamericano.png" alt="">
+                                        <div class="price">
+                                            -15%
+                                        </div>
+                                        <div class="social">
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Americano', price: 160.00})"><i class="fas fa-shopping-cart"></i></a>
+                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                            <a href="#"><i class="fas fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <h2>Hot Americano</h2>
+                                    <div class="stars">
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <article>
+                                        ₱ 160.00
+                                    </article>
+                                    <span>
+                                        ₱ 175.00
+                                    </span>
+                                </div>
+
+                                    <div class="shop1 mix sweets"  data-user="123" data-price="170.00">
+                                        <div class="shop-image">
+                                            <img src="pic/hotcappuccino.png" alt="">
+                                            <div class="price">
+                                                -15%
+                                            </div>
+                                            <div class="social">
+                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Cappuccino', price: 170.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                <a href="#"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <h2>Hot Cappuccino</h2>
+                                        <div class="stars">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <article>
+                                            ₱ 170.00
+                                        </article>
+                                        <span>
+                                            ₱ 180.00
+                                        </span>
+                                    </div>
+
+                                        <div class="shop1 mix sweets"  data-user="123" data-price="170.00">
+                                            <div class="shop-image">
+                                                <img src="pic/hotcaramellatte.png" alt="">
+                                                <div class="price">
+                                                    -15%
+                                                </div>
+                                                <div class="social">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Caramel Latte', price: 170.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <h2>Hot Caramel Latte</h2>
+                                            <div class="stars">
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <article>
+                                                ₱ 170.00
+                                            </article>
+                                            <span>
+                                                ₱ 185.00
+                                            </span>
+                                        </div>
+
+    <div class="shop1 mix sweets"  data-user="123" data-price="165.00">
+                <div class="shop-image">
+    <img src="pic/hotchoco.png" alt="">
+    <div class="price">
+                                                        -15%
+    </div>
+    <div class="social">
+                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Chocolate', price: 165.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                                <h2>Hot Chocolate</h2>
+                                                <div class="stars">
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <article>
+                                                    ₱ 165.00
+                                                </article>
+                                                <span>
+                                                    ₱ 175.00
+                                                </span>
+                                            </div>
+
+                                                <div class="shop1 mix sweets"  data-user="123" data-price="170.00">
+                                                    <div class="shop-image">
+                                                        <img src="pic/hotcafemocha.png" alt="">
+                                                        <div class="price">
+                                                            -15%
+                                                        </div>
+                                                        <div class="social">
+                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Cafe Mocha', price: 170.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h2>Hot Cafe Mocha</h2>
+                                                    <div class="stars">
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <article>
+                                                        ₱ 170.00
+                                                    </article>
+                                                    <span>
+                                                        ₱ 180.00
+                                                    </span>
+                                                </div>
+
+                                                    <div class="shop1 mix sweets"  data-user="123" data-price="85.00">
+                                                        <div class="shop-image">
+                                                            <img src="pic/doublechocolatebrownie.png" alt="">
+                                                            <div class="price">
+                                                                -15%
+                                                            </div>
+                                                            <div class="social">
+                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Double Chocolate Brownie', price: 85.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <h2>Double Chocolate Brownie</h2>
+                                                        <div class="stars">
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                        <article>
+                                                            ₱ 85.00
+                                                        </article>
+                                                        <span>
+                                                            ₱ 100.00
+                                                        </span>
+                                                    </div>
+
+                                                        <div class="shop1 mix sweets"  data-user="123" data-price="70.00">
+                                                            <div class="shop-image">
+                                                                <img src="pic/chocolatechipcookie.png" alt="">
+                                                                <div class="price">
+                                                                    -15%
+                                                                </div>
+                                                                <div class="social">
+                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Chocolate Chip Cookie', price: 70.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <h2>Chocolate Chip Cookie</h2>
+                                                            <div class="stars">
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                            <article>
+                                                                ₱ 70.00
+                                                            </article>
+                                                            <span>
+                                                                ₱ 80.00
+                                                            </span>
+                                                        </div>
+
+                                                            <div class="shop1 mix sweets"  data-user="123" data-price="90.00">
+                                                                <div class="shop-image">
+                                                                    <img src="pic/bavariancreamcroissant.png" alt="">
+                                                                    <div class="price">
+                                                                        -15%
+                                                                    </div>
+                                                                    <div class="social">
+                                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Bavarian Cream Croissant', price: 90.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <h2>Bavarian Cream Croissant</h2>
+                                                                <div class="stars">
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="far fa-star"></i>
+                                                                </div>
+                                                                <article>
+                                                                    ₱ 90.00
+                                                                </article>
+                                                                <span>
+                                                                    ₱ 105.00
+                                                                </span>
+                                                            </div>
+
+                                                                <div class="shop1 mix sweets"  data-user="123" data-price="85.00">
+                                                                    <div class="shop-image">
+                                                                        <img src="pic/chocolatechipmuffin.png" alt="">
+                                                                        <div class="price">
+                                                                            -15%
+                                                                        </div>
+                                                                        <div class="social">
+                                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Chocolate Chip Muffin', price: 85.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h2>Chocolate Chip Muffin</h2>
+                                                                    <div class="stars">
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                    </div>
+                                                                    <article>
+                                                                        ₱ 85.00
+                                                                    </article>
+                                                                    <span>
+                                                                        ₱ 95.00
+                                                                    </span>
+                                                                </div>
+
+
+                                                                    <div class="shop1 mix sweets"  data-user="123" data-price="85.00">
+                                                                        <div class="shop-image">
+                                                                            <img src="pic/blueberrymuffin.png" alt="">
+                                                                            <div class="price">
+                                                                                -15%
+                                                                            </div>
+                                                                            <div class="social">
+                                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Blueberry Muffin', price: 85.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h2>Blueberry Muffin</h2>
+                                                                        <div class="stars">
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="far fa-star"></i>
+                                                                        </div>
+                                                                        <article>
+                                                                            ₱ 85.00
+                                                                        </article>
+                                                                        <span>
+                                                                            ₱ 100.00
+                                                                        </span>
+                                                                    </div>
+
+                                                                        <div class="shop1 mix sweets"  data-user="123" data-price="90.00">
+                                                                            <div class="shop-image">
+                                                                                <img src="pic/coconutmacaroon.png" alt="">
+                                                                                <div class="price">
+                                                                                    -15%
+                                                                                </div>
+                                                                                <div class="social">
+                                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Coconut Macaroon', price: 90.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <h2>Coconut Macaroon</h2>
+                                                                            <div class="stars">
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="far fa-star"></i>
+                                                                            </div>
+                                                                            <article>
+                                                                                ₱ 90.00
+                                                                            </article>
+                                                                            <span>
+                                                                                ₱ 100.00
+                                                                            </span>
+                                                                        </div>
+
+                                                                            <div class="shop1 mix sweets"  data-user="123" data-price="110.00">
+                                                                                <div class="shop-image">
+                                                                                    <img src="pic/creampuff.png" alt="">
+                                                                                    <div class="price">
+                                                                                        -15%
+                                                                                    </div>
+                                                                                    <div class="social">
+                                                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cream Puff', price: 110.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <h2>Cream Puff</h2>
+                                                                                <div class="stars">
+                                                                                    <i class="fas fa-star gold"></i>
+                                                                                    <i class="fas fa-star gold"></i>
+                                                                                    <i class="fas fa-star gold"></i>
+                                                                                    <i class="fas fa-star gold"></i>
+                                                                                    <i class="far fa-star"></i>
+                                                                                </div>
+                                                                                <article>
+                                                                                    ₱ 110.00
+                                                                                </article>
+                                                                                <span>
+                                                                                    ₱ 125.00
+                                                                                </span>
+                                                                            </div>
+
+
+                                                                                <div class="shop1 mix sweets"  data-user="123" data-price="90.00">
+                                                                                    <div class="shop-image">
+                                                                                        <img src="pic/tart.png" alt="">
+                                                                                        <div class="price">
+                                                                                            -15%
+                                                                                        </div>
+                                                                                        <div class="social">
+                                                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Tart', price: 90.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <h2>Tart</h2>
+                                                                                    <div class="stars">
+                                                                                        <i class="fas fa-star gold"></i>
+                                                                                        <i class="fas fa-star gold"></i>
+                                                                                        <i class="fas fa-star gold"></i>
+                                                                                        <i class="fas fa-star gold"></i>
+                                                                                        <i class="far fa-star"></i>
+                                                                                    </div>
+                                                                                    <article>
+                                                                                        ₱ 90.00
+                                                                                    </article>
+                                                                                    <span>
+                                                                                        ₱ 100.00
+                                                                                    </span>
+                                                                                </div>
+
+
+                                                                                    <div class="shop1 mix sweets"  data-user="123" data-price="95.00">
+                                                                                        <div class="shop-image">
+                                                                                            <img src="pic/cheeseensaymada.png" alt="">
+                                                                                            <div class="price">
+                                                                                                -15%
+                                                                                            </div>
+                                                                                            <div class="social">
+                                                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cheese Ensaymada', price: 95.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <h2>Cheese Ensaymada</h2>
+                                                                                        <div class="stars">
+                                                                                            <i class="fas fa-star gold"></i>
+                                                                                            <i class="fas fa-star gold"></i>
+                                                                                            <i class="fas fa-star gold"></i>
+                                                                                            <i class="fas fa-star gold"></i>
+                                                                                            <i class="far fa-star"></i>
+                                                                                        </div>
+                                                                                        <article>
+                                                                                            ₱ 95.00
+                                                                                        </article>
+                                                                                        <span>
+                                                                                            ₱ 100.00
+                                                                                        </span>
+                                                                                    </div>
+
+
+                                                                                        <div class="shop1 mix sweets"  data-user="123" data-price="110.00">
+                                                                                            <div class="shop-image">
+                                                                                                <img src="pic/eggpie.png" alt="">
+                                                                                                <div class="price">
+                                                                                                    -15%
+                                                                                                </div>
+                                                                                                <div class="social">
+                                                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Egg Pie', price: 110.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <h2>Egg Pie</h2>
+                                                                                            <div class="stars">
+                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                <i class="far fa-star"></i>
+                                                                                            </div>
+                                                                                            <article>
+                                                                                                ₱ 110.00
+                                                                                            </article>
+                                                                                            <span>
+                                                                                                ₱ 125.00
+                                                                                            </span> 
+                                                                                        </div>
+                                                                                            
+                                                                                            
+                                                                                            <div class="shop1 mix sweets"  data-user="123" data-price="110.00">
+                                                                                                <div class="shop-image">
+                                                                                                    <img src="pic/cinnamonrolls.png" alt="">
+                                                                                                    <div class="price">
+                                                                                                        -15%
+                                                                                                    </div>
+                                                                                                    <div class="social">
+                                                                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cinnamon Rolls', price: 110.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <h2>Cinnamon Rolls</h2>
+                                                                                                <div class="stars">
+                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                    <i class="far fa-star"></i>
+                                                                                                </div>
+                                                                                                <article>
+                                                                                                    ₱ 110.00
+                                                                                                </article>
+                                                                                                <span>
+                                                                                                    ₱ 125.00
+                                                                                                </span>
+                                                                                            </div>
+
+                                                                                                <div class="shop1 mix sweets"  data-user="123" data-price="125.00">
+                                                                                                    <div class="shop-image">
+                                                                                                        <img src="pic/cheesecakebar.png" alt="">
+                                                                                                        <div class="price">
+                                                                                                            -15%
+                                                                                                        </div>
+                                                                                                        <div class="social">
+                                                                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Cheesecake Bar', price: 125.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <h2>Cheesecake Bar</h2>
+                                                                                                    <div class="stars">
+                                                                                                        <i class="fas fa-star gold"></i>
+                                                                                                        <i class="fas fa-star gold"></i>
+                                                                                                        <i class="fas fa-star gold"></i>
+                                                                                                        <i class="fas fa-star gold"></i>
+                                                                                                        <i class="far fa-star"></i>
+                                                                                                    </div>
+                                                                                                    <article>
+                                                                                                        ₱ 125.00
+                                                                                                    </article>
+                                                                                                    <span>
+                                                                                                        ₱ 130.00
+                                                                                                    </span>
+                                                                                                </div>
+
+
+                                                                                                    <div class="shop1 mix sweets"  data-user="123" data-price="110.00">
+                                                                                                        <div class="shop-image">
+                                                                                                            <img src="pic/pretzel.png" alt="">
+                                                                                                            <div class="price">
+                                                                                                                -15%
+                                                                                                            </div>
+                                                                                                            <div class="social">
+                                                                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Pretzel', price: 110.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <h2>Pretzel</h2>
+                                                                                                        <div class="stars">
+                                                                                                            <i class="fas fa-star gold"></i>
+                                                                                                            <i class="fas fa-star gold"></i>
+                                                                                                            <i class="fas fa-star gold"></i>
+                                                                                                            <i class="fas fa-star gold"></i>
+                                                                                                            <i class="far fa-star"></i>
+                                                                                                        </div>
+                                                                                                        <article>
+                                                                                                            ₱ 110.00
+                                                                                                        </article>
+                                                                                                        <span>
+                                                                                                            ₱ 120.00
+                                                                                                        </span>
+                                                                                                    </div>
+
+
+                                                                                                        <div class="shop1 mix sweets"  data-user="123" data-price="125.00">
+                                                                                                            <div class="shop-image">
+                                                                                                                <img src="pic/churros.png" alt="">
+                                                                                                                <div class="price">
+                                                                                                                    -15%
+                                                                                                                </div>
+                                                                                                                <div class="social">
+                                                                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Churros', price: 125.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <h2>Churros</h2>
+                                                                                                            <div class="stars">
+                                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                                <i class="fas fa-star gold"></i>
+                                                                                                                <i class="far fa-star"></i>
+                                                                                                            </div>
+                                                                                                            <article>
+                                                                                                                ₱ 125.00
+                                                                                                            </article>
+                                                                                                            <span>
+                                                                                                                ₱ 135.00
+                                                                                                            </span>
+                                                                                                        </div>
+
+
+                                                                                                            <div class="shop1 mix sweets"  data-user="123" data-price="165.00">
+                                                                                                                <div class="shop-image">
+                                                                                                                    <img src="pic/hotlemontea.png" alt="">
+                                                                                                                    <div class="price">
+                                                                                                                        -15%
+                                                                                                                    </div>
+                                                                                                                    <div class="social">
+                                                                                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                                                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Hot Lemon Tea', price: 165.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <h2>Hot Lemon Tea</h2>
+                                                                                                                <div class="stars">
+                                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                                    <i class="fas fa-star gold"></i>
+                                                                                                                    <i class="far fa-star"></i>
+                                                                                                                </div>
+                                                                                                                <article>
+                                                                                                                    ₱ 165.00
+                                                                                                                </article>
+                                                                                                                <span>
+                                                                                                                    ₱ 175.00
+                                                                                                                </span>
+                                                                                                            </div>
+
+
+
+                                         <div class="shop1 mix sweets"  data-user="123" data-price="180.00">
+                                <div class="shop-image">
+                                    <img src="pic/icedtea.png" alt="">
+                                    <div class="price">
+                                        -15%
+                                    </div>
+                                    <div class="social">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Iced Tea', price: 180.00})"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#"><i class="fas fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <h2>Iced Tea</h2>
+                                <div class="stars">
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="fas fa-star gold"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <article>
+                                    ₱ 180.00
+                                </article>
+                                <span>
+                                    ₱ 190.00
+                                </span>
+                                         </div>
+
+
+                                <div class="shop1 mix sweets"  data-user="123" data-price="250.00">
+                                    <div class="shop-image">
+                                        <img src="pic/1.png" alt="">
+                                        <div class="price">
+                                            -15%
+                                        </div>
+                                        <div class="social">
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 250.00})"><i class="fas fa-shopping-cart"></i></a>
+                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                            <a href="#"><i class="fas fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <h2>Double Chocolate Brownie + Cappuccino Frappe</h2>
+                                    <div class="stars">
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="fas fa-star gold"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <article>
+                                        ₱ 250.00
+                                    </article>
+                                    <span>
+                                        ₱ 270.00
+                                    </span>
+                                </div>
+
+
+                                    <div class="shop1 mix sweets"  data-user="123" data-price="240.00">
+                                        <div class="shop-image">
+                                            <img src="pic/2.png" alt="">
+                                            <div class="price">
+                                                -15%
+                                            </div>
+                                            <div class="social">
+                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 240.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                <a href="#"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <h2>Chocolate Chip Cookie + Iced Caramel Latte</h2>
+                                        <div class="stars">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <article>
+                                            ₱ 240.00
+                                        </article>
+                                        <span>
+                                            ₱ 255.00
+                                        </span>
+                                    </div>
+
+                                        <div class="shop1 mix sweets"  data-user="123" data-price="250.00">
+                                            <div class="shop-image">
+                                                <img src="pic/3.png" alt="">
+                                                <div class="price">
+                                                    -15%
+                                                </div>
+                                                <div class="social">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 250.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <h2>Croissant + Hot Cappuccino</h2>
+                                            <div class="stars">
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="fas fa-star gold"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <article>
+                                                ₱ 250.00
+                                            </article>
+                                            <span>
+                                                ₱ 270.00
+                                            </span>
+                                        </div>
+
+
+
+                                            <div class="shop1 mix sweets"  data-user="123" data-price="265.00">
+                                                <div class="shop-image">
+                                                    <img src="pic/4.png" alt="">
+                                                    <div class="price">
+                                                        -15%
+                                                    </div>
+                                                    <div class="social">
+                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 265.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                                <h2>Muffin + Dark Chocolate Frappe</h2>
+                                                <div class="stars">
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="fas fa-star gold"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <article>
+                                                    ₱ 265.00
+                                                </article>
+                                                <span>
+                                                    ₱ 280.00
+                                                </span>
+                                            </div>
+
+
+                                                <div class="shop1 mix sweets"  data-user="123" data-price="275.00">
+                                                    <div class="shop-image">
+                                                        <img src="pic/5.png" alt="">
+                                                        <div class="price">
+                                                            -15%
+                                                        </div>
+                                                        <div class="social">
+                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 275.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h2>Macarons + Iced White Mocha</h2>
+                                                    <div class="stars">
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="fas fa-star gold"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <article>
+                                                        ₱ 275.00
+                                                    </article>
+                                                    <span>
+                                                        ₱ 285.00
+                                                    </span>
+                                                </div>
+
+                                                    <div class="shop1 mix sweets"  data-user="123" data-price="265.00">
+                                                        <div class="shop-image">
+                                                            <img src="pic/6.png" alt="">
+                                                            <div class="price">
+                                                                -15%
+                                                            </div>
+                                                            <div class="social">
+                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 265.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <h2>Cream Puff + Hot Chocolate</h2>
+                                                        <div class="stars">
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="fas fa-star gold"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                        <article>
+                                                            ₱ 265.00
+                                                        </article>
+                                                        <span>
+                                                            ₱ 280.00
+                                                        </span>
+                                                    </div>
+
+                                                        <div class="shop1 mix sweets"  data-user="123" data-price="250.00">
+                                                            <div class="shop-image">
+                                                                <img src="pic/7.png" alt="">
+                                                                <div class="price">
+                                                                    -15%
+                                                                </div>
+                                                                <div class="social">
+                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 250.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <h2>Tart + Iced Cafe Latte</h2>
+                                                            <div class="stars">
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="fas fa-star gold"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                            <article>
+                                                                ₱ 250.00
+                                                            </article>
+                                                            <span>
+                                                                ₱ 265.00
+                                                            </span>
+                                                        </div>
+
+
+                                                            <div class="shop1 mix sweets"  data-user="123" data-price="275.00">
+                                                                <div class="shop-image">
+                                                                    <img src="pic/8.png" alt="">
+                                                                    <div class="price">
+                                                                        -15%
+                                                                    </div>
+                                                                    <div class="social">
+                                                                        <a href="#"><i class="far fa-heart"></i></a>
+                                                                        <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 275.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                        <a href="#"><i class="fas fa-search"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <h2>Cheese Ensaymada + Caramel Vanilla Frappe</h2>
+                                                                <div class="stars">
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="fas fa-star gold"></i>
+                                                                    <i class="far fa-star"></i>
+                                                                </div>
+                                                                <article>
+                                                                    ₱ 275.00
+                                                                </article>
+                                                                <span>
+                                                                    ₱ 285.00
+                                                                </span>
+                                                            </div>
+
+                                                                <div class="shop1 mix sweets"  data-user="123" data-price="280.00">
+                                                                    <div class="shop-image">
+                                                                        <img src="pic/9.png" alt="">
+                                                                        <div class="price">
+                                                                            -15%
+                                                                        </div>
+                                                                        <div class="social">
+                                                                            <a href="#"><i class="far fa-heart"></i></a>
+                                                                            <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 280.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                            <a href="#"><i class="fas fa-search"></i></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h2>Cinnamon Rolls + Iced Chocolate Cafe</h2>
+                                                                    <div class="stars">
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="fas fa-star gold"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                    </div>
+                                                                    <article>
+                                                                        ₱ 280.00
+                                                                    </article>
+                                                                    <span>
+                                                                        ₱ 295.00
+                                                                    </span>
+                                                                </div>
+
+                                                                    <div class="shop1 mix sweets"  data-user="123" data-price="275.00">
+                                                                        <div class="shop-image">
+                                                                            <img src="pic/10.png" alt="">
+                                                                            <div class="price">
+                                                                                -15%
+                                                                            </div>
+                                                                            <div class="social">
+                                                                                <a href="#"><i class="far fa-heart"></i></a>
+                                                                                <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 275.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                <a href="#"><i class="fas fa-search"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h2>Pretzels + Cold Brew</h2>
+                                                                        <div class="stars">
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="fas fa-star gold"></i>
+                                                                            <i class="far fa-star"></i>
+                                                                        </div>
+                                                                        <article>
+                                                                            ₱ 275.00
+                                                                        </article>
+                                                                        <span>
+                                                                            ₱ 285.00
+                                                                        </span>
+                                                                    </div>
+
+
+                                                                        <div class="shop1 mix sweets"  data-user="123" data-price="300.00">
+                                                                            <div class="shop-image">
+                                                                                <img src="pic/11.png" alt="">
+                                                                                <div class="price">
+                                                                                    -15%
+                                                                                </div>
+                                                                                <div class="social">
+                                                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                                                    <a href="#" class="add-to-cart" onclick="addToCart({name: 'Lemon Lychee Tea', price: 300.00})"><i class="fas fa-shopping-cart"></i></a>
+                                                                                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                                                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <h2>Churros + Lemon Lychee Tea</h2>
+                                                                            <div class="stars">
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="fas fa-star gold"></i>
+                                                                                <i class="far fa-star"></i>
+                                                                            </div>
+                                                                            <article>
+                                                                                ₱ 300.00
+                                                                            </article>
+                                                                            <span>
+                                                                                ₱ 310.00
+                                                                            </span>
+
+
+                                    </div>
+
+                        
+            </div>
+        </div>-->
+    </div>
+
+    <!-- Add this modal at the end of your body section -->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true" style="right: 0;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="cartModalBody">
+                <!-- Cart content will be displayed here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- end section three  -->
+
+    <!-- start section four  -->
+
+
+    <div class="bg-menu" id="menu">
+        <div class="menu-title">
+            <section>Cafestries's</section>
+            <h2>menu for frappe</h2>
+            <hr>
+        </div>
+        <div class="menu-flex">
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/cappuccinof.png" alt="">
+                </div>
+                <div>
+                    <h4>Cappuccino Frappe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 175.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/caramelvanf.png" alt="">
+                </div>
+                <div>
+                    <h4>Caramel Vanilla Frappe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 190.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/darkchocof.png" alt="">
+                </div>
+                <div>
+                    <h4>Dark Chocolate Frappe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 190.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/strawberryvanf.png" alt="">
+                </div>
+                <div>
+                    <h4>Strawberry Vanilla Frappe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 200.00</h4>
+                </div>
+            </div>
+
+
+    
+    <div class="bg-menu" id="menu">
+        <div class="menu-title">
+            <section>Cafestries's</section>
+            <h2>menu for drinks</h2>
+            <hr>
+        </div>
+        <div class="menu-flex">
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/coldbrew.png" alt="">
+                </div>
+                <div>
+                    <h4>Cold Brew</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 175.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedamericano.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Americano</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 170.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedcafelatte.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Cafe Latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 170.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedcaramellatte.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Caramel Latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 180.00</h4>
+                </div>
+            </div>
+
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedchoco.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Chocolate Cafe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 180.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedwhitemocha.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced White Mocha</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 195.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedcappuccino.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Cappuccino</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 180.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/icedcaramelmacchiato.png" alt="">
+                </div>
+                <div>
+                    <h4>Iced Caramel Macchiato</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 180.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/hotamericano.png" alt="">
+                </div>
+                <div>
+                    <h4>Hot Americano</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 160.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/hotcappuccino.png" alt="">
+                </div>
+                <div>
+                    <h4>Hot Cappuccino</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 170.00</h4>
+                </div>  
+
+
+            </div>
+
+        </div>
+
+            <div class="menu-flex">
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/hotcaramellatte.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Hot Caramel Latte</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 170.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/hotchoco.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Hot Chocolate</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 165.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/hotcafemocha.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Hot Cafe Mocha/h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 170.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/hotlemontea.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Hot Lemon Tea</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 165.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/icedtea.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Iced Tea/h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 180.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/lemonlycheetea.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Lemon Lychee Tea</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 185.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/doublechocolatebrownie.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Double Chocolate Brownie</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 85.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/chocolatechipcookie.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Chocolate Chip Cookie</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 70.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/bavariancreamcroissant.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Bavarian Cream Croissant</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 90.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/chocolatechipmuffin.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Chocolate Chip Muffin</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 85.00</h4>
+                    </div>  
+    
+    
+                </div>
+
+
+
+        
+        </div>
+        
+        <div class="bg-menu" id="menu">
+            <div class="menu-title">
+                <section>Cafestries's</section>
+                <h2>combo meal  & bread</h2>
+                <hr>
+            </div>
+            <div class="menu-flex">
+
+
+
+        <div class="menu-flex">
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/1.png" alt="">
+                </div>
+                <div>
+                    <h4>Brownie + Frappuccino</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 250.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/2.png" alt="">
+                </div>
+                <div>
+                    <h4>Cookie + Carlatte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 240.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/3.png" alt="">
+                </div>
+                <div>
+                    <h4>Croissant + Hot cappu</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 250.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/4.png" alt="">
+                </div>
+                <div>
+                    <h4>Muffin + DarkC Frappe</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 265.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/5.png" alt="">
+                </div>
+                <div>
+                    <h4>Macarons + White Mocha</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 275.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/6.png" alt="">
+                </div>
+                <div>
+                    <h4>Cream Puff + HC</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 265.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/7.png" alt="">
+                </div>
+                <div>
+                    <h4>Tart + Cafe Latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 250.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/8.png" alt="">
+                </div>
+                <div>
+                    <h4>Ensaymada + CarVanilla </h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 275.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/9.png" alt="">
+                </div>
+                <div>
+                    <h4>Cinnamon + Iced Choco</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 280.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="pic/10.png" alt="">
+                </div>
+                <div>
+                    <h4>Pretzel + Cold brew</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>₱ 275.00</h4>
+                </div>  
+
+
+            </div>
+
+        </div>
+
+            <div class="menu-flex">
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/11.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Churros + Lemon Lychee</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 300.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/blueberrymuffin.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Blueberry Muffin</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 85.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/coconutmacaroon.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Coconut Macaroon</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 90.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/creampuff.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Cream Puff</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 110.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/tart.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Tart</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 90.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/cheeseensaymada.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Cheese Ensaymada</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 95.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/eggpie.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Egg Pie</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 110.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/cinnamonrolls.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Cinnamon Rolls</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 110.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/cheesecakebar.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Cheesecake Bar</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 125.00</h4>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <div class="small-image">
+                        <img src="pic/pretzel.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Pretzel</h4>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <h4>₱ 110.00</h4>
+                    </div>  
+    
+    
+                </div>
+
+
+
+
+        </div>
+
+
+        
+        </div>
+        
+
+        <div class="menu-link">
+            <a href="file:///C:/Users/Michaella%20Cuartero/Desktop/ismaella%20(FINAL)/pic/White%20and%20White%20Minimalist%20Coffee%20Cafe%20Menu.pdf">view menu</a>
+        </div>
+
+   <!-- end section four  -->
+
+   
+    <!-- start section five  -->
+
+    <div class="bg-gallery">
+        <div class="gallery-flex">
+            <div class="image-one event">
+                <img src="pic/first.png" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="inside-gallery">
+                <div class="left">
+                    <div class="event">
+                        <img src="pic/second.png" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="event">
+                        <img src="pic/fourth.png" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="event">
+                        <img src="pic/third.png" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="event">
+                        <img src="pic/fifth.png" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-image event">
+                <img src="pic/sixth.png" alt="">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+            
+
+    <!-- end section five  -->
+
+
+    <!-- start section six  -->
+
+    <div class="bg-about" id="about">
+        <div class="about-flex">
+            <div class="about1">
+                <div>
+                    <img src="pic/close.jpg" alt="">
+                </div>
+                <div class="image-logo">
+                    <img src="pic/.png" alt="">
+                </div>
+            </div>
+
+            <div class="about1">
+                <div>
+                    <img src="pic/open.jpg" alt="">
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section six  -->
+
+    <!-- start footer section  -->
+    
+    <div class="footer" id="contact">
+        <div class="footer-flex">
+            <div class="footer1">
+                <div>
+                    <img src="pic/.png" alt="">
+                </div>
+                <section>
+                    Experience affordability without compromise. Our commitment to providing competitive prices ensures that 
+                    everyone can savor the finest quality coffee. We invite you to grant us the privilege of serving you, allowing our exceptional offerings to speak for themselves. Your satisfaction is our priority, and we welcome the opportunity to exceed your expectations.
+                </section>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/profile.php?id=61555523386896"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/VIsmaella44701"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/brewedbite_haven"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+
+            <div class="footer1">
+                <h3>contact info</h3>
+                <div class="location">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <a href="#">our location</a>
+                    <section>Las Piñas, Metro Manila</section>
+                </div>
+                <div class="location">
+                    <span><i class="fas fa-phone"></i></span>
+                    <a href="#">our phone</a>
+                    <section>+63-123-456-789</section>
+                    <section>+63-987-654-321</section>
+                </div>
+            </div>
+            <div class="footer1">
+                <h3>subscribe</h3>
+                <form action="">
+                    <input type="email" name="" id="emailInput" placeholder="your Email">
+                    <a href="#" id="subscribeLink">subscribe</a>
+                </form>
+                <div class="check">
+                    <input type="checkbox" name="" id="inpt">
+                    <label for="inpt">I have read and agree to all terms & conditions.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('subscribeLink').addEventListener('click', function(event) {
+            var emailInput = document.getElementById('emailInput').value;
+            var termsCheckbox = document.getElementById('inpt');
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailInput === '') {
+                alert('Please enter your email before subscribing.');
+                event.preventDefault(); // Prevent the default behavior (following the link)
+            } else if (!emailRegex.test(emailInput)) {
+                alert('Please enter a valid email address.');
+                event.preventDefault(); // Prevent the default behavior (following the link)
+            } else if (!termsCheckbox.checked) {
+                alert('Please agree to the terms and conditions.');
+                event.preventDefault(); // Prevent the default behavior (following the link)
+            } else {
+                alert('Subscription successful!');
+                // You can add additional logic here, such as submitting the form or navigating to another page.
+            }
+        });
+    </script>
+    
+    <div class="modal-body" id="cartModalBody">
+
+        <div class="modal" tabindex="-1" role="dialog" id="confirmationModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Confirmation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="confirmationText"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" id="confirmButton">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- Add this modal at the end of your HTML, just before the closing </body> tag -->
+<div class="modal" tabindex="-1" role="dialog" id="paymentMethodModal" style="right: 0;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Choose Payment Method</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please choose a payment method:</p>
+                <div>
+                    <input type="radio" name="paymentMethod" value="gcash" id="gcashOption">
+                    <label for="gcashOption">GCash</label>
+                </div>
+                <div id="gcashImageContainer" style="display: none;">
+                    <img src="gcash_image.jpg" alt="GCash" style="max-width: 100%; height: auto;">
+                    <p style="text-align: center; margin-top: 10px;">Scan Here</p>
+                </div>
+                <div>
+                    <input type="radio" name="paymentMethod" value="payAtCounter" id="payAtCounterOption">
+                    <label for="payAtCounterOption">Pay at the Counter</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="showReceiptModal()">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const gcashOption = document.getElementById('gcashOption');
+    const payAtCounterOption = document.getElementById('payAtCounterOption');
+    const proceedToPaymentBtn = document.querySelector('#paymentMethodModal .btn-primary');
+
+    // Disable the "Proceed to Payment" button initially
+    proceedToPaymentBtn.disabled = true;
+
+    // Add an event listener to the GCash radio button
+    gcashOption.addEventListener('change', function () {
+        // Toggle the visibility of the image container based on the radio button's checked state
+        const gcashImageContainer = document.getElementById('gcashImageContainer');
+        gcashImageContainer.style.display = gcashOption.checked ? 'block' : 'none';
+
+        // Enable the "Proceed to Payment" button if GCash is selected
+        proceedToPaymentBtn.disabled = !gcashOption.checked && !payAtCounterOption.checked;
+    });
+
+    // Add an event listener to the Pay at the Counter radio button
+    payAtCounterOption.addEventListener('change', function () {
+        // Enable the "Proceed to Payment" button if Pay at the Counter is selected
+        proceedToPaymentBtn.disabled = !gcashOption.checked && !payAtCounterOption.checked;
+    });
+
+    // Add an event listener to the "Proceed to Payment" button
+    proceedToPaymentBtn.addEventListener('click', function () {
+        // Check if either GCash or Pay at the Counter option is selected
+        if (!gcashOption.checked && !payAtCounterOption.checked) {
+            alert('Please choose a payment method before proceeding.');
+            // You may also consider showing a more user-friendly message or styling the modal to indicate the error.
+        } else {
+            // If a payment option is selected, proceed with your logic (e.g., showing the receipt modal)
+            showReceiptModal();
+        }
+    });
+});
+
+// Function to show the receipt modal (you need to implement this)
+function showReceiptModal() {
+    // Implement your logic to show the receipt modal here
+    console.log('Proceeding to Payment');
+}
+
+</script>
+
+<div class="modal" id="receiptModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeReceiptModal()">&times;</span>
+      <h2>Receipt</h2>
+      <p>Cafestries's BrewedBite Haven</p>
+      <div id="receiptItems"></div>
+      <p>Total: <span id="totalAmount"></span></p>
+      <p>Thank you!</p>
+    </div>
+  </div>
+  
+<script>
+    // Add items to the receipt
+function addToReceipt(itemName, itemPrice) {
+  const receiptItems = document.getElementById('receiptItems');
+  const itemElement = document.createElement('div');
+  itemElement.innerHTML = `${itemName}: ₱${itemPrice.toFixed(2)}`;
+  receiptItems.appendChild(itemElement);
+}
+
+// Calculate and display total amount
+function updateTotalAmount() {
+  const totalAmountElement = document.getElementById('totalAmount');
+  const receiptItems = document.getElementById('receiptItems').childNodes;
+  let totalAmount = 0;
+
+  receiptItems.forEach(item => {
+    const price = parseFloat(item.innerHTML.split(': ₱')[1]);
+    totalAmount += price;
+  });
+
+  totalAmountElement.textContent = `₱${totalAmount.toFixed(2)}`;
+}
+
+// Show the receipt modal
+function showReceiptModal() {
+  const modal = document.getElementById('receiptModal');
+  modal.style.display = 'block';
+
+  // Clear previous items in the receipt
+  const receiptItems = document.getElementById('receiptItems');
+  receiptItems.innerHTML = '';
+
+  // Iterate through the items in the cart
+  const cartItems = getCartItems(); // Replace with your actual function to get cart items
+  cartItems.forEach(item => {
+    addToReceipt(item.name, item.price);
+  });
+
+  // Update total amount
+  updateTotalAmount();
+}
+
+// Initialize an array to store cart items
+let cartItem
+
+// Add items to the cart
+function addToCart(item) {
+  cartItems.push(item);
+}
+
+// Show the receipt modal
+function showReceiptModal() {
+  const modal = document.getElementById('receiptModal');
+  modal.style.display = 'block';
+
+  // Clear previous items in the receipt
+  const receiptItems = document.getElementById('receiptItems');
+  receiptItems.innerHTML = '';
+
+  // Iterate through the items in the cart
+  cartItems.forEach(item => {
+    addToReceipt(item.name, item.price);
+  });
+
+  // Update total amount
+  updateTotalAmount();
+}
+
+// Close the receipt modal
+function closeReceiptModal() {
+  const modal = document.getElementById('receiptModal');
+  modal.style.display = 'none';
+
+  // Clear the receipt items
+  document.getElementById('receiptItems').innerHTML = '';
+  // Clear the total amount
+  document.getElementById('totalAmount').textContent = '';
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById('receiptModal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+    // Clear the receipt items
+    document.getElementById('receiptItems').innerHTML = '';
+    // Clear the total amount
+    document.getElementById('totalAmount').textContent = '';
+  }
+}
+
+// Function to be called when the user clicks "Proceed to Payment"
+function completeCheckout() {
+  // Perform any necessary actions for completing the checkout
+
+  // Show the receipt modal
+  showReceiptModal();
+}
+</script>
+
+    <!-- end footer section  -->
+
+    <script src="mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('.consts');
+    </script>
+
+    <!-- links for jquery and bootstrap4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="main.js">
+    </script>
+
+<script>
+    $(document).ready(function() {
+        // Attach a function to be executed when the paymentMethodModal is shown
+        $('#paymentMethodModal').on('show.bs.modal', function() {
+            // Hide the cartModal when the paymentMethodModal is shown
+            $('#cartModal').modal('hide');
+        });
+
+        // Attach a function to be executed when the paymentMethodModal is hidden
+        $('#paymentMethodModal').on('hidden.bs.modal', function() {
+            // Show the cartModal when the paymentMethodModal is hidden
+            $('#cartModal').modal('show');
+        });
+    });
+</script>
+
+<script>
+    // Function to toggle the display of the GCash image based on the selected payment method
+    function toggleImageDisplay() {
+        var gcashImageContainer = document.getElementById('gcashImageContainer');
+        var gcashOption = document.getElementById('gcashOption');
+
+        if (gcashOption.checked) {
+            gcashImageContainer.style.display = 'block'; // Show the GCash image
+        } else {
+            gcashImageContainer.style.display = 'none'; // Hide the GCash image
+        }
+    }
+
+    // Attach the toggleImageDisplay function to the change event of the GCash radio button
+    document.getElementById('gcashOption').addEventListener('change', toggleImageDisplay);
+</script>
+
+<!-- Update your existing script or add this script after your existing scripts -->
+<script>
+    // Function to scroll to the home section
+    function scrollToHome() {
+        // Get the home section by its ID
+        var homeSection = document.getElementById('home');
+
+        // Check if the home section exists
+        if (homeSection) {
+            // Scroll to the top of the home section smoothly
+            homeSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Call the scrollToHome function when the page is loaded or refreshed
+    window.addEventListener('load', scrollToHome);
+
+</script>
+
+<!-- Update your existing script or add this script after your existing scripts -->
+<script>
+
+function checkout() {
+    // Check if the cart is empty
+    if (cartItems.length === 0) {
+        alert("Your cart is empty. Please add items before checking out.");
+        return; // Do not proceed with checkout
+    }
+
+    // Display the payment method modal
+    $('#paymentMethodModal').modal('show');
+}
+
+
+function completeCheckout() {
+        // Check which payment method is selected
+        var selectedPaymentMethod = $('input[name="paymentMethod"]:checked').val();
+
+        // You can perform actions based on the selected payment method
+        if (selectedPaymentMethod === 'gcash') {
+            // Add any specific actions for GCash payment here
+        } else if (selectedPaymentMethod === 'payAtCounter') {
+            // Add any specific actions for Pay at the Counter payment here
+        }
+
+        // Generate receipt content dynamically (customize this based on your needs)
+        var receiptContent = "<p>Thank you for your purchase!</p>" +
+            "<p>Payment Method: " + selectedPaymentMethod + "</p>" +
+            "<p>Total Amount: ₱" + calculateTotalPrice().toFixed(2) + "</p>"; // Assuming you have a function to calculate total price
+
+        // Set the receipt content in the modal body
+        $('#receiptModalBody').html(receiptContent);
+        
+        // Show the receipt modal
+        $('#receiptModal').modal('show');
+
+        // Close the payment method modal
+        $('#paymentMethodModal').modal('hide');
+    }
+
+    function calculateTotalPrice() {
+        // Add your logic to calculate the total price based on the selected items
+        var total = 0;
+        for (var i = 0; i < cartItems.length; i++) {
+            total += cartItems[i].price * cartItems[i].quantity;
+        }
+        return total;
+    }
+
+    // Cart items array to store selected products
+    var cartItems = [];
+
+    // Function to toggle the visibility of the cart modal
+    function toggleCart() {
+        // Update the modal content with the cart items and total price
+        updateCartModal();
+        // Show the modal
+        $('#cartModal').modal('show');
+    }
+
+    // Function to add an item to the cart
+    function addToCart(item) {
+        // Check if the item is already in the cart
+        var existingItem = cartItems.find(function (cartItem) {
+            return cartItem.name === item.name;
+        });
+
+        if (existingItem) {
+            // If the item is already in the cart, increment its quantity
+            existingItem.quantity += 1;
+        } else {
+            // If the item is not in the cart, add it with quantity 1
+            item.quantity = 1;
+            cartItems.push(item);
+        }
+
+        // Update the modal content with the cart items and total price
+        updateCartModal();
+    }
+
+    // Function to increment the quantity of an item in the cart
+    function incrementQuantity(index) {
+        cartItems[index].quantity += 1;
+        // Update the modal content with the cart items and total price
+        updateCartModal();
+    }
+
+    // Function to decrement the quantity of an item in the cart
+    function decrementQuantity(index) {
+        if (cartItems[index].quantity > 1) {
+            cartItems[index].quantity -= 1;
+        } else {
+            // If quantity is 1, show a confirmation dialog before removing the item
+            var confirmationText = "Are you sure you want to remove " + cartItems[index].name + "?";
+            showConfirmationModal(confirmationText, function () {
+                // Remove the item from the cartItems array
+                cartItems.splice(index, 1);
+                // Update the modal content with the cart items and total price
+                updateCartModal();
+            });
+        }
+
+        // Update the modal content with the cart items and total price
+        updateCartModal();
+    }
+
+    // Function to show a custom confirmation modal
+    function showConfirmationModal(text, callback) {
+        var confirmationModal = $('#confirmationModal');
+        confirmationModal.find('#confirmationText').text(text);
+
+        var confirmButton = confirmationModal.find('#confirmButton');
+        confirmButton.off('click').on('click', function () {
+            confirmationModal.modal('hide');
+            if (typeof callback === 'function') {
+                callback();
+            }
+        });
+
+        confirmationModal.modal('show');
+    }
+
+    // Function to update the cart modal content
+    function updateCartModal() {
+        var cartModalBody = document.getElementById("cartModalBody");
+        var totalPrice = 0;
+
+        // Clear the existing content
+        cartModalBody.innerHTML = "";
+
+        // Loop through cart items and calculate total price
+        for (var i = 0; i < cartItems.length; i++) {
+            var cartItem = cartItems[i];
+            totalPrice += cartItem.price * cartItem.quantity;
+
+        // Display each cart item in the modal with increment and decrement buttons
+        var cartItemDiv = document.createElement("div");
+        cartItemDiv.innerHTML =
+            "<p style='display: flex; justify-content: space-between; align-items: center;'>" +
+            "<span>" + cartItem.name + " - ₱" + (cartItem.price * cartItem.quantity).toFixed(2) + "</span>" +
+            "<span>" +
+            " <button onclick='incrementQuantity(" + i + ")'>+</button>" +
+            " " + cartItem.quantity +
+            " <button onclick='decrementQuantity(" + i + ")'>-</button>" +
+            "</span>" +
+            "</p>";
+        cartModalBody.appendChild(cartItemDiv);
+
+        function removeItem(index) {
+        var removedItemName = cartItems[index].name;
+        cartItems.splice(index, 1);
+        // Update the modal content with the cart items and total price
+        updateCartModal();
+        alert("Item '" + removedItemName + "' removed from the cart");
+    }
+
+        // Function to confirm removal of an item with quantity zero
+        function confirmRemove(index) {
+            if (cartItems[index].quantity === 0) {
+        var removeConfirmed = confirm("Are you sure you want to remove '" + cartItems[index].name + "'?");
+            if (removeConfirmed) {
+                removeItem(index);
+            }
+        }
+    }
+        }
+
+        // Display the total price in the modal footer
+        var modalFooter = document.querySelector("#cartModal .modal-footer");
+        modalFooter.innerHTML = "<p>Total Price: ₱" + totalPrice.toFixed(2) + "</p>"+
+                                "<button class='checkout-button' onclick='checkout()'>Checkout</button>";
+
+        // Optionally, update the total price next to the cart icon
+        var cartTotalPrice = document.querySelector(".cart-total-price");
+        cartTotalPrice.innerHTML = "₱" + totalPrice.toFixed(2);
+
+        // Create an array to store selected products
+var selectedProducts = [];
+
+// Function to handle product selection
+function handleProductSelection(product) {
+    // Check if the product is already selected
+    var index = selectedProducts.indexOf(product);
+    if (index === -1) {
+        // Product is not selected, add it to the array
+        selectedProducts.push(product);
+    } else {
+        // Product is already selected, remove it from the array
+        selectedProducts.splice(index, 1);
+    }
+}
+
+// Assuming you have an array to store selected products
+var selectedProducts = [];
+
+function addToCart(product) {
+    // Check if the product is already in the selectedProducts array
+    var existingProductIndex = selectedProducts.findIndex(p => p.name === product.name);
+
+    if (existingProductIndex !== -1) {
+        // If the product is already in the array, remove it (toggle off)
+        selectedProducts.splice(existingProductIndex, 1);
+    } else {
+        // If the product is not in the array, add it (toggle on)
+        selectedProducts.push(product);
+    }
+
+    // You can add visual feedback for the user, such as changing the color of the add-to-cart button
+
+    // Log the selected products (for demonstration purposes)
+    console.log("Selected Products:", selectedProducts);
+}
+
+// Assuming you have an array to store selected products
+var selectedProducts = [];
+
+function addToCart(product) {
+    // Check if the product is already in the selectedProducts array
+    var existingProductIndex = selectedProducts.findIndex(p => p.name === product.name);
+
+    if (existingProductIndex !== -1) {
+        // If the product is already in the array, remove it (toggle off)
+        selectedProducts.splice(existingProductIndex, 1);
+    } else {
+        // If the product is not in the array, add it (toggle on)
+        selectedProducts.push(product);
+    }
+
+    // You can add visual feedback for the user, such as changing the color of the add-to-cart button
+
+    // Log the selected products (for demonstration purposes)
+    console.log("Selected Products:", selectedProducts);
+}
+
+// Assuming you have an array to store selected products
+var selectedProducts = [];
+
+function addToCart(product) {
+    // Check if the product is already in the selectedProducts array
+    var existingProductIndex = selectedProducts.findIndex(p => p.name === product.name);
+
+    if (existingProductIndex !== -1) {
+        // If the product is already in the array, remove it (toggle off)
+        selectedProducts.splice(existingProductIndex, 1);
+    } else {
+        // If the product is not in the array, add it (toggle on)
+        selectedProducts.push(product);
+    }
+
+    // You can add visual feedback for the user, such as changing the color of the add-to-cart button
+
+    // Log the selected products (for demonstration purposes)
+    console.log("Selected Products:", selectedProducts);
+}
+    }
+</script>
+
+<style>
+    /* Add these styles to customize the checkout button */
+    .checkout-button {
+        background-color: #4CAF50; /* Green background color */
+        color: white;             /* White text color */
+        padding: 10px 20px;        /* Padding around the button text */
+        font-size: 16px;           /* Font size */
+        border: none;              /* No border */
+        cursor: pointer;           /* Cursor on hover */
+        border-radius: 4px;         /* Rounded corners */
+    }
+
+    /* Style the button on hover */
+    .checkout-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+</style>
+
+<style>
+    /* Style for the cartModal */
+#cartModal {
+    position: fixed;
+    top: 60px; /* Adjust this value to set the distance from the top */
+    right: 40px; /* Adjust this value to set the distance from the right */
+}
+
+/* Style for the paymentMethodModal */
+#paymentMethodModal {
+    position: fixed;
+    top: 60px; /* Adjust this value to set the distance from the top */
+    right: 40px; /* Adjust this value to set the distance from the right */
+    
+}
+
+/* Style for the receiptModal */
+#receiptModal {
+    position: fixed;
+    top: 60px; /* Adjust this value to set the distance from the top */
+    right: 40px; /* Adjust this value to set the distance from the right */
+}
+
+#confirmationtModal {
+    position: fixed;
+    top: 60px; /* Adjust this value to set the distance from the top */
+    right: 40px; /* Adjust this value to set the distance from the right */
+}
+</style>
+
+</body>
+</html>
